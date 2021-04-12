@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(6, 55, 70);
+    font-family: Monoton;
+    color: rgb(252, 229, 26);
+    letter-spacing: 2px;
+}
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
+    grid-template-rows: auto;
+    grid-gap:50px 30px;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-family: monoton;
+    background-color:rgb(247, 167, 18);
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.again{
+    margin: 10px;
+}
+.instruct{
+    text-align: end;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.start{
+    text-align: center;
+    font-size: 26px;
+}
+.number{
+    width: 100px;
+    height: 100px;
+    background-color: rosybrown;
+    margin: auto;
+    font-size: 51px;
+    box-sizing: border-box;
+}
+.num{
+    margin: 0px;
+    border: 10px double;
+    box-sizing: border-box;
+}
+.num:before{
+    content: '';
+    width: 96%;
+    height: 6px;
+    background-color: salmon;
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 34.5%;
+    z-index: -1;
+}
+.main{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
+    grid-template-rows: auto;
+    grid-gap:30px 30px;
+    margin: 50px auto;
+}
+.value{
+    width: 250px;
+    height: 80px;
+    background-color: rgb(61, 189, 125);
+    border: none;
+    margin: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: monoton;
+    color: #000;
+}
+
+.check{
+    margin: 30px;
+}
+.output{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 400px){
+    .header{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-gap:0px 30px;
+    }
+    .instruct{
+        text-align: center;
+        font-size: 15px;
+        margin-right: 0px;
+    }
+    .start{
+        font-size: 14px;
+    }
+    .num:before{
+        top: 31.5%;
+    }
+    .main{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        margin: 30px auto;
+    }
+    .value {
+        width: 300px;
+        height: 60px;
+        margin: 27px;
+    }
+    .check {
+        margin: 0;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .output{
+        margin-top: 40px;
+    }
+}
