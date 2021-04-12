@@ -99,7 +99,7 @@ body{
         font-size: 14px;
     }
     .num:before{
-        top: 34.5%;
+        display:none;
     }
     .main{
         width: 100%;
